@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 150%;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hiddenFull {
+  display: none;
+}
+
+#hero__video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --------------------------------------------------
+NAVIGATION 
+-------------------------------------------------- */
+
+.header__desktop,
+.header__mobile {
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header__desktop {
+  display: flex;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.logo {
+  height: 60px;
+  width: 78px;
+}
+
+.nav__btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  transform: skewX(-15deg);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+
+.nav__btn:hover,
+.nav__btn--active {
+  background-color: rgb(206, 206, 206);
+  transform: skewX(15deg);
+}
+
+.btn__mobile__menu {
+  margin-right: 4px;
+}
+
+.nav__link {
+  width: 100px;
+  background-color: white;
+}
+
+.mobile__menu {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+  row-gap: 40px;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+/* --------------------------------------------------
+MODAL BOXES 
+-------------------------------------------------- */
+
+section {
+  width: 90%;
+  max-width: 600px;
+  max-height: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-color: white;
+  transition: visibility 0.5s, opacity 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: auto;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.underline {
+  background-color: rgba(0, 0, 0, 0.295);
+  height: 0.5px;
+  margin: 10px 10% 20px 10%;
+}
+
+.about__headshot {
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.about__live {
+  width: 100%;
+  margin: 40px 0 20px 0;
+  object-fit: cover;
+  height: 200px;
+}
+
+.about__first-para {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+br {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  margin: 10px;
+}
+
+/* --------------------------------------------------
+TOUR DATES 
+-------------------------------------------------- */
+
+.bit-top-track-button,
+.bit-nav-bar-container,
+.bit-rsvp {
+  display: none !important;
+}
+
+.bit-widget {
+  padding-bottom: 0 !important;
+}
+
+/* --------------------------------------------------
+CONTACT
+-------------------------------------------------- */
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.contact img {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.contact,
+.contact p {
+  text-align: center;
+}
+
+/* --------------------------------------------------
+NEW RELEASE 
+-------------------------------------------------- */
+
+.new__music {
+  position: fixed;
+  top: 82%;
+  left: -210px;
+  height: 100px;
+  display: flex;
+  transition: left 1s, opacity 0.5s;
+  opacity: 0.7;
+}
+
+.new__music:hover {
+  opacity: 1;
+}
+
+.new__music__moved {
+  left: 0;
+}
+
+.new__music__btn {
+  background-color: white;
+  width: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.new__music__btn:hover {
+  cursor: pointer;
+}
+
+.new__music__album {
+  background-color: white;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.album__art {
+  height: 90px;
+}
+
+.music__player {
+  width: 110px;
+}
+
+.music__info {
+  font-size: 14px;
+  text-align: center;
+}
+
+.music__controls {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.music__controls ion-icon {
+  margin: 0;
+}
+
+/* --------------------------------------------------
+FOOTER 
+-------------------------------------------------- */
+
+footer {
+  color: rgba(255, 255, 255, 0.575);
+  position: fixed;
+  width: 100%;
+  bottom: 5px;
+}
+
+.social__media {
+  list-style: none;
+  text-align: center;
+}
+
+.social__media li {
+  display: inline;
+  margin-right: 10px;
+}
+
+ion-icon {
+  font-size: 40px;
+  margin: 0 20px;
+  transition: color 0.5s;
+}
+
+.social__media__links {
+  color: rgba(255, 255, 255, 0.575);
+}
+
+#facebook:hover {
+  color: #4267b2;
+}
+
+#instagram:hover {
+  color: #e1306c;
+}
+
+#youtube:hover {
+  color: #ff0000;
+}

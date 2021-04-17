@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Michael Austin | Nashville Recording Artist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav class="header__desktop">
+          <img src="img/MA-Logo.png" class="logo" />
+          <button class="nav__btn btn__about">ABOUT</button>
+          <button class="nav__btn btn__tour__dates">TOUR</button>
+          <button class="nav__btn btn__contact">CONTACT</button>
+          <button
+            class="nav__btn"
+            onclick="location.href='https://www.richardsandsouthern.com/collections/michael-austin';"
+            value="Go to Store"
+          >
+            STORE
+          </button>
+        </nav>
+        <nav class="header__mobile">
+          <img src="img/MA-Logo.png" class="logo" />
+          <button class="nav__btn btn__mobile__menu">MENU</button>
+          <div class="mobile__menu hidden">
+            <button class="nav__btn btn__about">ABOUT</button>
+            <button class="nav__btn btn__tour__dates">TOUR</button>
+            <button class="nav__btn btn__contact">CONTACT</button>
+            <button
+              class="nav__btn"
+              onclick="location.href='https://www.richardsandsouthern.com/collections/michael-austin';"
+              value="Go to Store"
+            >
+              STORE
+            </button>
+          </div>
+        </nav>
+      </div>
+      <video autoplay muted loop id="hero__video">
+        <source src="video/MA_hero_video.webm" type="video/webm" />
+        <source src="video/MA_hero_video.mp4" type="video/mp4" />
+      </video>
+    </header>
+
+    <section class="about hidden">
+      <h1>Michael Austin</h1>
+      <div class="underline"></div>
+      <div class="about__first-para">
+        <div>
+          <p>
+            With a bold sound influenced by the legends of Outlaw Country,
+            Americana and Rock, Michael Austin has had impressive chart success
+            in over 25 different countries with his debut CD “Neon Halo”
+          </p>
+          <p>
+            Austin grew up in a small Missouri town (Cole Turkey Acres) and sang
+            from a very young age. He even had his first paid gig at age 7, when
+            a performer at a local establishment put the young singer up on
+            stage promising to pay him if he sang well… well, Michael earned his
+            first singing fee that day and has been impressing audiences ever
+            since with his incredible songwriting skills and strong command of
+            the stage.
+          </p>
+        </div>
+        <img
+          src="img/MA-about-1.jpg"
+          alt="Michael Austin"
+          class="about__headshot"
+        />
+      </div>
+      <img src="img/MA-background-1.jpeg" class="about__live" />
+      <p>
+        The depths of his professional credits are as diverse as his talent,
+        having served our country in the United States Air Force from the age of
+        18, to working everything from street patrol to high-security gang units
+        for the San Bernardino, County Sheriff’s Department to studying opera
+        and then appearing on Season 4 of NBC’s “The Voice” (chosen by “Team
+        Adam”). Still passionately dedicated to our troops and their families,
+        Michael performs often for the U.S. Armed Forces and he is frequently
+        requested to sing his powerful version of the National Anthem at events
+        and festivals. Always striving for the top level of musicianship from
+        himself and his band, he gives his fans music and live shows they will
+        not soon forget.
+      </p>
+    </section>
+
+    <section class="tour__dates hidden">
+      <script
+        charset="utf-8"
+        src="https://widget.bandsintown.com/main.min.js"
+      ></script>
+      <a
+        class="bit-widget-initializer"
+        data-artist-name="Michael Austin"
+        data-display-local-dates="false"
+        data-display-past-dates="false"
+        data-auto-style="false"
+        data-text-color="#333"
+        data-link-color="#333"
+        data-background-color="rgba(0,0,0,0)"
+        data-display-limit="10"
+        data-display-start-time="false"
+        data-link-text-color="#FFFFFF"
+        data-display-lineup="false"
+        data-display-play-my-city="false"
+        data-separator-color="rgba(124,124,124,0)"
+      ></a>
+    </section>
+
+    <section class="contact hidden">
+      <div class="contact__section">
+        <img src="img/black-sheep-logo.png" alt="Black Sheep Label Group" />
+        <h2>Management</h2>
+        <p>Susan Hobbs Ortiz</p>
+        <p>susan@blacksheeprecords.net</p>
+        <p>714-471-1630</p>
+      </div>
+      <div class="contact__section">
+        <img src="img/splash-logo.webp" alt="Splash Publicity" />
+        <h2>Press Requests</h2>
+        <p>Vanessa Parker-Davis</p>
+        <p>vanessadavis@splashpublicity.com</p>
+        <p>615-579-8225</p>
+      </div>
+    </section>
+
+    <!-- <div class="new__album">
+      <h3>Listen to the newest release</h3>
+      <img src="img/MA-god-guns-art.jpg" class="album__art" />
+    </div> -->
+
+    <div class="new__music">
+      <div class="new__music__album">
+        <img src="img/MA-god-guns-art.jpg" class="album__art" />
+        <div class="music__player">
+          <p class="music__info">God Guns and Country Music</p>
+          <div class="music__controls">
+            <ion-icon name="play-outline" class="play"></ion-icon>
+            <ion-icon name="pause-outline" class="pause"></ion-icon>
+          </div>
+          <audio id="new__music--audio">
+            <source src="video/GOD GUNS & COUNTRY MUSIC_Final Mix_1.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+      <div class="new__music__btn">NEW MUSIC</div>
+    </div>
+
+    <footer>
+      <ul class="social__media">
+        <li>
+          <a
+            href="https://www.facebook.com/themichaelaustinlive/"
+            class="social__media__links"
+            ><ion-icon id="facebook" name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/themichaelaustinlive/"
+            class="social__media__links"
+            ><ion-icon id="instagram" name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCFn6tfVbte2Ci60U-L8zQrw"
+            class="social__media__links"
+            ><ion-icon id="youtube" name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
