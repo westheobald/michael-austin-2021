@@ -3,10 +3,31 @@
 <html lang="en">
   <head>
     <title>Michael Austin | Nashville Recording Artist</title>
+    <meta
+      name="description"
+      content="Official website for the country music artist Michael Austin. Find information on upcoming concerts, new releases, and more!"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/style.min.css" />
     <link rel="stylesheet" href="resources/queries.min.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "@id": "https://musicbrainz.org/artist/14051328-06ea-4fa0-85e7-da5d9e61efe1",
+        "name": "Michael Austin",
+        "image": "img/MA-headshot.jpg",
+        "url": "https://www.michaelaustinlive.com",
+        "genre": "Country",
+        "sameAs": [
+          "https://www.facebook.com/themichaelaustinlive/",
+          "https://www.instagram.com/themichaelaustinlive/",
+          "https://www.youtube.com/channel/UCFn6tfVbte2Ci60U-L8zQrw",
+          "https://twitter.com/mikeaustinlive"
+        ]
+      }
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -17,10 +38,10 @@
     <header>
       <div>
         <nav id="nav__desktop">
-          <img src="img/MA-logo.png" class="logo" />
-          <button class="btn nav__btn" id="btn__about">ABOUT</button>
-          <button class="btn nav__btn" id="btn__tour__dates">TOUR</button>
-          <button class="btn nav__btn" id="btn__contact">CONTACT</button>
+          <img src="img/MA-logo.png" alt="Michael Austin Logo" class="logo" />
+          <button class="btn nav__btn btn__about">ABOUT</button>
+          <button class="btn nav__btn btn__tour__dates">TOUR</button>
+          <button class="btn nav__btn btn__contact">CONTACT</button>
           <button
             class="btn nav__btn"
             onclick="location.href='https://www.richardsandsouthern.com/collections/michael-austin';"
@@ -30,12 +51,12 @@
           </button>
         </nav>
         <nav id="nav__mobile">
-          <img src="img/MA-logo.png" class="logo" />
+          <img src="img/MA-logo.png" alt="Michael Austin Logo" class="logo" />
           <button class="btn nav__btn" id="btn__mobile__menu">MENU</button>
           <div class="hidden" id="mobile__menu">
-            <button class="btn nav__btn" id="btn__about">ABOUT</button>
-            <button class="btn nav__btn" id="tn__tour__dates">TOUR</button>
-            <button class="btn nav__btn" id="btn__contact">CONTACT</button>
+            <button class="btn nav__btn btn__about">ABOUT</button>
+            <button class="btn nav__btn btn__tour__dates">TOUR</button>
+            <button class="btn nav__btn btn__contact">CONTACT</button>
             <button
               class="btn nav__btn"
               onclick="location.href='https://www.richardsandsouthern.com/collections/michael-austin';"
@@ -54,6 +75,7 @@
 
     <section class="hidden" id="about">
       <h1>Michael Austin</h1>
+      <h2>Country Recording Artist</h2>
       <div class="underline"></div>
       <div id="about__first__paragraph">
         <div>
@@ -79,7 +101,11 @@
         />
       </div>
       <div id="about__second__paragraph">
-        <img src="img/MA-about.jpg" id="about__live" />
+        <img
+          src="img/MA-about.jpg"
+          alt="Michael Austin in Concert"
+          id="about__live"
+        />
         <p>
           The depths of his professional credits are as diverse as his talent,
           having served our country in the United States Air Force from the age
@@ -97,10 +123,8 @@
     </section>
 
     <section class="hidden" id="tour__dates">
-      <script
-        charset="utf-8"
-        src="https://widget.bandsintown.com/main.min.js"
-      ></script>
+      <h3 class="tour__date__heading">Upcoming Tour Dates</h3>
+      <script src="https://widget.bandsintown.com/main.min.js"></script>
       <a
         class="bit-widget-initializer"
         data-artist-name="Michael Austin"
@@ -121,7 +145,7 @@
 
     <section class="hidden" id="contact">
       <div class="contact__section">
-        <h2>Management</h2>
+        <h3>Management</h3>
         <img
           src="img/black-sheep-logo.png"
           alt="Black Sheep Label Group"
@@ -132,7 +156,7 @@
         <p>714-471-1630</p>
       </div>
       <div class="contact__section">
-        <h2>Press Requests</h2>
+        <h3>Press Requests</h3>
         <img
           src="img/splash-logo.webp"
           alt="Splash Publicity"
@@ -146,7 +170,11 @@
 
     <div class="new__music">
       <div id="music__player">
-        <img src="img/MA-god-guns-art.jpg" class="album__art" />
+        <img
+          src="img/MA-god-guns-art.jpg"
+          alt="God Guns and Country Music Album Art"
+          class="album__art"
+        />
         <div>
           <p id="music__info">God Guns and Country Music</p>
           <div id="music__controls">

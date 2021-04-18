@@ -4,7 +4,6 @@ const navBtns = document.querySelectorAll(".nav__btn");
 
 const navDesktop = document.getElementById("nav__desktop");
 
-const navMobile = document.getElementById("nav__mobile");
 const navMobileBtn = document.getElementById("btn__mobile__menu");
 const navMobileMenu = document.getElementById("mobile__menu");
 
@@ -25,15 +24,16 @@ const socialMedia = document.getElementById("social__media");
 navDesktop.addEventListener("click", function (e) {
   navBtns.forEach((btn) => btn.classList.remove("nav__btn--active"));
   allSections.forEach((section) => section.classList.add("hidden"));
-  if (e.target.id.includes("tour__dates")) {
+
+  if (e.target.classList.contains("btn__tour__dates")) {
     e.target.classList.add("nav__btn--active");
     tourSection.classList.remove("hidden");
   }
-  if (e.target.id.includes("about")) {
+  if (e.target.classList.contains("btn__about")) {
     e.target.classList.add("nav__btn--active");
     aboutSection.classList.remove("hidden");
   }
-  if (e.target.id.includes("contact")) {
+  if (e.target.classList.contains("btn__contact")) {
     e.target.classList.add("nav__btn--active");
     contactSection.classList.remove("hidden");
   }
@@ -41,17 +41,17 @@ navDesktop.addEventListener("click", function (e) {
 
 navMobileMenu.addEventListener("click", function (e) {
   socialMedia.classList.add("hiddenFull");
-  if (e.target.id.includes("tour__dates")) {
+  if (e.target.classList.contains("btn__tour__dates")) {
     tourSection.classList.remove("hidden");
     navMobileMenu.classList.add("hidden");
     newMusic.classList.add("hidden");
   }
-  if (e.target.id.includes("about")) {
+  if (e.target.classList.contains("btn__about")) {
     aboutSection.classList.remove("hidden");
     navMobileMenu.classList.add("hidden");
     newMusic.classList.add("hidden");
   }
-  if (e.target.id.includes("contact")) {
+  if (e.target.classList.contains("btn__contact")) {
     contactSection.classList.remove("hidden");
     navMobileMenu.classList.add("hidden");
     newMusic.classList.add("hidden");
@@ -88,7 +88,6 @@ newAlbumBtn.addEventListener("click", function () {
 });
 
 musicControls.addEventListener("click", function (e) {
-  console.log("click")
   if (e.target.id === "play") {
     audioFile.play();
   }
