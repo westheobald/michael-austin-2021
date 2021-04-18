@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-}
-
-button {
-  font-family: "Bebas Neue", cursive;
-  font-size: 150%;
 }
 
 .hidden {
@@ -16,25 +12,33 @@ button {
 }
 
 .hiddenFull {
-  display: none;
+  display: none !important;
 }
 
-#hero__video {
+#background__video {
   position: fixed;
   top: 0;
   z-index: -1;
-  object-fit: cover;
-  object-position: center;
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* --------------------------------------------------
 NAVIGATION 
 -------------------------------------------------- */
 
-.header__desktop,
-.header__mobile {
+#nav__desktop {
+  display: flex;
+}
+
+#nav__mobile {
+  display: none;
+}
+
+#nav__desktop,
+#nav__mobile {
   top: 0;
   justify-content: space-between;
   align-items: center;
@@ -42,25 +46,22 @@ NAVIGATION
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.header__desktop {
-  display: flex;
-}
-
-.header__mobile {
-  display: none;
-}
-
 .logo {
   height: 60px;
   width: 78px;
 }
 
+.btn {
+  font-family: "Bebas Neue", cursive;
+  font-size: 150%;
+}
+
 .nav__btn {
   height: 40px;
   width: 100px;
-  border: none;
   transform: skewX(-15deg);
   background-color: white;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background-color 0.5s, transform 0.5s;
   cursor: pointer;
@@ -72,22 +73,13 @@ NAVIGATION
   transform: skewX(15deg);
 }
 
-.btn__mobile__menu {
-  margin-right: 4px;
-}
-
-.nav__link {
-  width: 100px;
-  background-color: white;
-}
-
-.mobile__menu {
+#mobile__menu {
   position: fixed;
   top: 80px;
   right: 0;
+  margin: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 20px;
   row-gap: 40px;
   transition: visibility 0.5s, opacity 0.5s;
 }
@@ -97,12 +89,12 @@ MODAL BOXES
 -------------------------------------------------- */
 
 section {
-  width: 90%;
-  max-width: 600px;
-  max-height: 70%;
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 70%;
+  max-width: 1000px;
+  max-height: 60%;
   transform: translate(-50%, -45%);
   background-color: white;
   transition: visibility 0.5s, opacity 0.5s;
@@ -125,46 +117,50 @@ h1 {
   padding-top: 15px;
 }
 
-.underline {
-  background-color: rgba(0, 0, 0, 0.295);
-  height: 0.5px;
-  margin: 10px 10% 20px 10%;
-}
-
-.about__headshot {
-  margin: 0 auto;
-  width: 80%;
-  height: 400px;
-  object-fit: cover;
-  object-position: 50% 20%;
-}
-
-.about__live {
-  width: 100%;
-  margin: 40px 0 20px 0;
-  object-fit: cover;
-  height: 200px;
-}
-
-.about__first-para {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-
-br {
-  margin-bottom: 20px;
-}
-
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 25px;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+/* --------------------------------------------------
+ABOUT
+-------------------------------------------------- */
+
+.underline {
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.295);
+  margin: 10px 10% 20px 10%;
+}
+
+#about__first__paragraph,
+#about__second__paragraph {
+  margin: 20px 20px;
   text-align: justify;
-  margin: 10px;
+}
+
+#about__headshot {
+  width: 225px;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+#about__first__paragraph {
+  display: grid;
+  grid-template-columns: 1fr 225px;
+  column-gap: 20px;
+}
+
+#about__live {
+  float:left;
+  max-width: 400px;
+  margin-right: 20px;
 }
 
 /* --------------------------------------------------
@@ -185,22 +181,21 @@ TOUR DATES
 CONTACT
 -------------------------------------------------- */
 
-.contact {
+#contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  text-align: center;
 }
 
-.contact img {
+.contact__section {
+  margin: 20px 0;
+}
+
+.contact__logo {
   max-height: 200px;
   max-width: 300px;
-}
-
-.contact,
-.contact p {
-  text-align: center;
 }
 
 /* --------------------------------------------------
@@ -210,11 +205,15 @@ NEW RELEASE
 .new__music {
   position: fixed;
   top: 82%;
-  left: -210px;
+  left: -205px;
   height: 100px;
   display: flex;
-  transition: left 1s, opacity 0.5s;
   opacity: 0.7;
+  transition: left 1s, opacity 0.5s;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
 }
 
 .new__music:hover {
@@ -225,54 +224,39 @@ NEW RELEASE
   left: 0;
 }
 
-.new__music__btn {
-  background-color: white;
+#new__music__btn {
   width: 30px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
   writing-mode: vertical-lr;
   text-orientation: sideways;
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
-  text-align: center;
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.new__music__btn:hover {
   cursor: pointer;
 }
 
-.new__music__album {
-  background-color: white;
+#music__player {
   height: 100%;
   width: 200px;
   display: flex;
   align-items: center;
-  padding: 0 5px;
+  padding-left: 5px;
 }
 
 .album__art {
   height: 90px;
 }
 
-.music__player {
-  width: 110px;
-}
-
-.music__info {
+#music__info {
   font-size: 14px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
-.music__controls {
+#music__controls {
   display: flex;
   justify-content: space-between;
+  font-size: 40px;
+  padding: 0 10px;
   cursor: pointer;
-  margin: 0 10px;
-}
-
-.music__controls ion-icon {
-  margin: 0;
 }
 
 /* --------------------------------------------------
@@ -286,23 +270,21 @@ footer {
   bottom: 5px;
 }
 
-.social__media {
-  list-style: none;
+#social__media {
   text-align: center;
 }
 
-.social__media li {
+#social__media li {
   display: inline;
-  margin-right: 10px;
 }
 
-ion-icon {
+.social__icon {
   font-size: 40px;
   margin: 0 20px;
   transition: color 0.5s;
 }
 
-.social__media__links {
+.social__media__link {
   color: rgba(255, 255, 255, 0.575);
 }
 
@@ -316,4 +298,8 @@ ion-icon {
 
 #youtube:hover {
   color: #ff0000;
+}
+
+#music-icon:hover {
+  color: #1db954;
 }
