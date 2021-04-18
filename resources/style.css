@@ -22,9 +22,9 @@
   height: 100vh;
   width: 100vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 /* --------------------------------------------------
@@ -45,11 +45,11 @@ NAVIGATION
 #nav__mobile {
   top: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -68,12 +68,13 @@ NAVIGATION
   height: 40px;
   width: 100px;
   -webkit-transform: skewX(-15deg);
-      -ms-transform: skewX(-15deg);
-          transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
   background-color: white;
   border: none;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
   transition: background-color 0.5s, -webkit-transform 0.5s;
   -o-transition: background-color 0.5s, transform 0.5s;
@@ -86,8 +87,8 @@ NAVIGATION
 .nav__btn--active {
   background-color: rgb(206, 206, 206);
   -webkit-transform: skewX(15deg);
-      -ms-transform: skewX(15deg);
-          transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  transform: skewX(15deg);
 }
 
 #mobile__menu {
@@ -115,15 +116,16 @@ section {
   max-width: 1000px;
   max-height: 60%;
   -webkit-transform: translate(-50%, -45%);
-      -ms-transform: translate(-50%, -45%);
-          transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -45%);
+  transform: translate(-50%, -45%);
   background-color: white;
   -webkit-transition: visibility 0.5s, opacity 0.5s;
   -o-transition: visibility 0.5s, opacity 0.5s;
   transition: visibility 0.5s, opacity 0.5s;
   border-radius: 5px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow-y: auto;
 }
 
@@ -141,7 +143,8 @@ h1 {
   padding-top: 15px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
 }
@@ -179,21 +182,21 @@ ABOUT
   height: 100%;
   margin: 0 auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 50% 20%;
-     object-position: 50% 20%;
+  object-position: 50% 20%;
 }
 
 #about__first__paragraph {
   display: grid;
   grid-template-columns: 1fr 225px;
   -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
 }
 
 #about__live {
-  float:left;
+  float: left;
   max-width: 400px;
   margin-right: 20px;
 }
@@ -224,11 +227,11 @@ CONTACT
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -239,6 +242,10 @@ CONTACT
 .contact__logo {
   max-height: 200px;
   max-width: 300px;
+}
+
+.contact__section p {
+  margin-bottom: 3px;
 }
 
 /* --------------------------------------------------
@@ -275,10 +282,10 @@ NEW RELEASE
   width: 30px;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
   -webkit-text-orientation: sideways;
-          text-orientation: sideways;
+  text-orientation: sideways;
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
   cursor: pointer;
@@ -291,8 +298,8 @@ NEW RELEASE
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 5px;
 }
 
@@ -310,8 +317,8 @@ NEW RELEASE
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 40px;
   padding: 0 10px;
   cursor: pointer;

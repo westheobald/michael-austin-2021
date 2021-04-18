@@ -38,7 +38,15 @@
     <header>
       <div>
         <nav id="nav__desktop">
-          <img src="img/MA-logo.png" alt="Michael Austin Logo" class="logo" />
+          <picture>
+            <source type="image/webp" srcset="img/MA-logo.webp" />
+            <source type="image/jpg" srcset="img/MA-logo.jpg" />
+            <img
+              source="img/MA-logo.jpg"
+              alt="Michael Austin Logo"
+              class="logo"
+            />
+          </picture>
           <button class="btn nav__btn btn__about">ABOUT</button>
           <button class="btn nav__btn btn__tour__dates">TOUR</button>
           <button class="btn nav__btn btn__contact">CONTACT</button>
@@ -51,7 +59,15 @@
           </button>
         </nav>
         <nav id="nav__mobile">
-          <img src="img/MA-logo.png" alt="Michael Austin Logo" class="logo" />
+          <picture>
+            <source type="image/webp" srcset="img/MA-logo.webp" />
+            <source type="image/jpg" srcset="img/MA-logo.jpg" />
+            <img
+              source="img/MA-logo.jpg"
+              alt="Michael Austin Logo"
+              class="logo"
+            />
+          </picture>
           <button class="btn nav__btn" id="btn__mobile__menu">MENU</button>
           <div class="hidden" id="mobile__menu">
             <button class="btn nav__btn btn__about">ABOUT</button>
@@ -68,7 +84,7 @@
         </nav>
       </div>
       <video autoplay muted loop id="background__video">
-        <!-- <source src="video/MA-hero-video.webm" type="video/webm" /> -->
+        <source src="video/MA-hero-video.webm" type="video/webm" />
         <source src="video/MA-hero-video.mp4" type="video/mp4" />
       </video>
     </header>
@@ -94,18 +110,26 @@
             the stage.
           </p>
         </div>
-        <img
-          src="img/MA-headshot.jpg"
-          alt="Michael Austin"
-          id="about__headshot"
-        />
+        <picture>
+          <source type="image/webp" srcset="img/MA-headshot.webp" />
+          <source type="image/jpg" srcset="img/MA-headshot.jpg" />
+          <img
+            src="img/MA-headshot.jpg"
+            alt="Michael Austin"
+            id="about__headshot"
+          />
+        </picture>
       </div>
       <div id="about__second__paragraph">
-        <img
-          src="img/MA-about.jpg"
-          alt="Michael Austin in Concert"
-          id="about__live"
-        />
+        <picture>
+          <source type="image/webp" srcset="img/MA-about.webp" />
+          <source type="image/jpg" srcset="img/MA-about.jpg" />
+          <img
+            src="img/MA-about.jpg"
+            alt="Michael Austin in Concert"
+            id="about__live"
+          />
+        </picture>
         <p>
           The depths of his professional credits are as diverse as his talent,
           having served our country in the United States Air Force from the age
@@ -146,22 +170,30 @@
     <section class="hidden" id="contact">
       <div class="contact__section">
         <h3>Management</h3>
-        <img
-          src="img/black-sheep-logo.png"
-          alt="Black Sheep Label Group"
-          class="contact__logo"
-        />
+        <picture>
+          <source type="image/webp" srcset="img/black-sheep-logo.webp" />
+          <source type="image/jpg" srcset="img/black-sheep-logo.jpg" />
+          <img
+            src="img/black-sheep-logo.png"
+            alt="Black Sheep Label Group"
+            class="contact__logo"
+          />
+        </picture>
         <p>Susan Hobbs Ortiz</p>
         <p>susan@blacksheeprecords.net</p>
         <p>714-471-1630</p>
       </div>
       <div class="contact__section">
         <h3>Press Requests</h3>
-        <img
-          src="img/splash-logo.webp"
-          alt="Splash Publicity"
-          class="contact__logo"
-        />
+        <picture>
+          <source type="image/webp" srcset="img/splash-logo.webp" />
+          <source type="image/jpg" srcset="img/splash-logo.jpg" />
+          <img
+            src="img/splash-logo.jpg"
+            alt="Splash Publicity"
+            class="contact__logo"
+          />
+        </picture>
         <p>Vanessa Parker-Davis</p>
         <p>vanessadavis@splashpublicity.com</p>
         <p>615-579-8225</p>
@@ -170,11 +202,15 @@
 
     <div class="new__music">
       <div id="music__player">
-        <img
-          src="img/MA-god-guns-art.jpg"
-          alt="God Guns and Country Music Album Art"
-          class="album__art"
-        />
+        <picture>
+          <source type="image/webp" srcset="img/MA-god-guns-art.webp" />
+          <source type="image/jpg" srcset="img/MA-god-guns-art.jpg" />
+          <img
+            src="img/MA-god-guns-art.webp"
+            alt="God Guns and Country Music Album Art"
+            class="album__art"
+          />
+        </picture>
         <div>
           <p id="music__info">God Guns and Country Music</p>
           <div id="music__controls">
