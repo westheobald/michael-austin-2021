@@ -177,22 +177,16 @@ ABOUT
   text-align: justify;
 }
 
-#about__headshot {
-  width: 225px;
-  height: 100%;
-  margin: 0 auto;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: 50% 20%;
-  object-position: 50% 20%;
-}
-
 #about__first__paragraph {
   display: grid;
   grid-template-columns: 1fr 225px;
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
+}
+
+.center__image {
+  margin: 0 auto;
 }
 
 #about__live {

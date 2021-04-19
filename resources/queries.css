@@ -20,10 +20,6 @@
   #about__first__paragraph {
     grid-template-columns: 1fr;
   }
-  #about__headshot {
-    height: 300px;
-    margin: 20px auto;
-  }
   #about__live {
     display: none;
   }
