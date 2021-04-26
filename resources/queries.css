@@ -1,3 +1,19 @@
+@media screen and (max-width: 800px) {
+  #about__first__paragraph {
+    grid-template-columns: 1fr;
+  }
+  #about__live {
+    display: none;
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+  }
+  .contact__section {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 696px) {
   #nav__desktop {
     display: none;
@@ -17,20 +33,6 @@
     letter-spacing: 5px;
   }
 
-  #about__first__paragraph {
-    grid-template-columns: 1fr;
-  }
-  #about__live {
-    display: none;
-  }
-
-  #contact {
-    grid-template-columns: 1fr;
-  }
-  .contact__section {
-    margin-bottom: 30px;
-  }
-
   .new__music {
     top: 60%;
   }
@@ -40,7 +42,7 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
