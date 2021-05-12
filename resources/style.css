@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   margin: 0;
@@ -60,7 +60,7 @@ NAVIGATION
 }
 
 .btn {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 150%;
 }
 
@@ -136,7 +136,7 @@ section::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
@@ -145,7 +145,7 @@ h1 {
 
 h2,
 h3 {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 25px;
 }
 
@@ -156,7 +156,7 @@ h2 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -264,6 +264,10 @@ NEW RELEASE
   text-align: center;
 }
 
+.animate__animated {
+  animation-duration: 2s;
+}
+
 .new__music:hover {
   opacity: 1;
 }
@@ -280,7 +284,7 @@ NEW RELEASE
   writing-mode: vertical-lr;
   -webkit-text-orientation: sideways;
   text-orientation: sideways;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 20px;
   cursor: pointer;
 }
